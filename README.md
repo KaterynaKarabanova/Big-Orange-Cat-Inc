@@ -1,7 +1,8 @@
-To Do List 
-Test task for Big-Orange-Cat-Inc company 
-In this project you can find To Do List with the abbility to add task, delete task and marked task as completed
-Used Tailwind for styling
+-To Do List. 
+
+-Test task for Big-Orange-Cat-Inc company.  
+-In this project you can find To Do List with the abbility to add task, delete task and marked task as completed. 
+-Used Tailwind for styling
 ![image](https://github.com/KaterynaKarabanova/Big-Orange-Cat-Inc/assets/135024704/b3fc7eac-d485-4261-b1eb-e6b829b011e1)
 
 
