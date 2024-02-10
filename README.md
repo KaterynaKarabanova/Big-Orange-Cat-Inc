@@ -1,6 +1,11 @@
-![reactjs-vite-tailwindcss-boilerplate](https://user-images.githubusercontent.com/16243531/217138979-b854309c-4742-4275-a705-f9fec5158217.jpg)
+To Do List 
+Test task for Big-Orange-Cat-Inc company 
+In this project you can find To Do List with the abbility to add task, delete task and marked task as completed
+Used Tailwind for styling
+![image](https://github.com/KaterynaKarabanova/Big-Orange-Cat-Inc/assets/135024704/b3fc7eac-d485-4261-b1eb-e6b829b011e1)
 
-# React Tailwindcss Boilerplate build with Vite
+
+This project was created using - # React Tailwindcss Boilerplate build with Vite
 
 This is a boilerplate build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier.
 
@@ -17,64 +22,3 @@ This project uses many tools like:
 - [Eslint](https://eslint.org)
 - [Prettier](https://prettier.io)
 
-## Getting Started
-
-### Install
-
-Create the project.
-
-```bash
-npx degit joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate my-app
-```
-
-Access the project directory.
-
-```bash
-cd my-app
-```
-
-Install dependencies.
-
-```bash
-pnpm install
-```
-
-Serve with hot reload at <http://localhost:5173>.
-
-```bash
-pnpm run dev
-```
-
-### Lint
-
-```bash
-pnpm run lint
-```
-
-### Typecheck
-
-```bash
-pnpm run typecheck
-```
-
-### Build
-
-```bash
-pnpm run build
-```
-
-### Test
-
-```bash
-pnpm run test
-```
-
-View and interact with your tests via UI.
-
-```bash
-pnpm run test:ui
-```
-
-## License
-
-This project is licensed under the MIT License.
