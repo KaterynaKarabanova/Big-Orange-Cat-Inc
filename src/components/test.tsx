@@ -1,32 +1,29 @@
-import { render, screen } from '@testing-library/react'
+import React from 'react'
+import { render, fireEvent } from '@testing-library/react'
+import ToDoItem from './ToDoItem/ToDoItem'
 
-import App from './App'
+test('renders the ToDoItem component', () => {
+  const mockList = [
+    { text: 'Task 1', completed: false },
+    { text: 'Task 2', completed: true }
+  ]
 
-describe('<App />', () => {
-  it('should render the App', () => {
-    const { container } = render(<App />)
+  const mockSetList = (updatedList: any) => updatedList
 
-    expect(
-      screen.getByRole('heading', {
-        name: /Welcome!/i,
-        level: 1
-      })
-    ).toBeInTheDocument()
+  const { getByText, getByLabelText } = render(
+    <ToDoItem list={mockList} setList={mockSetList} el={mockList[0]} />
+  )
 
-    expect(
-      screen.getByText(
-        /This is a boilerplate build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier./i
-      )
-    ).toBeInTheDocument()
+  expect(getByText('Task 1')).toBeInTheDocument()
 
-    expect(
-      screen.getByRole('link', {
-        name: /start building for free/i
-      })
-    ).toBeInTheDocument()
+  const checkbox = getByLabelText('Done')
+  expect(checkbox).toBeInTheDocument()
+  expect(checkbox).not.toBeChecked()
 
-    expect(screen.getByRole('img')).toBeInTheDocument()
+  fireEvent.click(checkbox)
 
-    expect(container.firstChild).toBeInTheDocument()
-  })
+  const deleteButton = getByText('Delete')
+  expect(deleteButton).toBeInTheDocument()
+
+  fireEvent.click(deleteButton)
 })

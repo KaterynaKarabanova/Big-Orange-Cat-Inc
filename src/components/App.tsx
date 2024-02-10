@@ -1,6 +1,6 @@
 import { FormEvent, useState } from 'react'
-import AddForm from './AddForm'
-import ToDoList from './TodoList'
+import AddForm from './AddForm/AddForm'
+import ToDoList from './ToDoList/TodoList'
 
 export interface listItem {
   text: string
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="mx-auto block w-96 py-24">
-      <h1 className="font-bold text-7xl mb-8">ToDo List </h1>
+      <h1 className="mb-8 text-7xl font-bold">ToDo List </h1>
       <AddForm onSubmit={onFormSubmit} />
       <ToDoList list={list} setList={setList} />
     </div>

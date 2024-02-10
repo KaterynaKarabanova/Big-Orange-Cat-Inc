@@ -2,7 +2,7 @@
   "name": "big-orange-cat-inc-test-",
   "description": "This is a boilerplate build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier.",
   "version": "0.1.0",
-  "homepage": "https://github.com/KaterynaKarabanova/Big-Orange-Cat-Inc.-Test-",
+  "homepage": "https://KaterynaKarabanova.github.io/Big-Orange-Cat-Inc.-Test-/",
   "private": true,
   "author": {
     "name": "João Paulo Moraes",
@@ -29,6 +29,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^6.3.0",
     "@testing-library/react": "^14.1.2",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.11.7",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
@@ -44,6 +45,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-tailwindcss": "^3.14.1",
     "happy-dom": "^12.10.3",
+    "jest": "^29.7.0",
     "postcss": "^8.4.33",
     "prettier": "3.1.1",
     "tailwindcss": "^3.4.1",

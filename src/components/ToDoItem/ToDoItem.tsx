@@ -1,5 +1,5 @@
 import { Dispatch } from 'react'
-import { listItem } from './App'
+import { listItem } from '../App'
 
 interface ToDoItemProps {
   list: listItem[]
